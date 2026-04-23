@@ -36,7 +36,7 @@
 > HTML5 | CSS3 / SCSS | JavaScript (OOP)
 
 ### Live Demo
-> [Play the game here](https://YOUR-USERNAME.github.io/space-ship-battle)
+> [Play the game here](https://theodor-gif.github.io/Space-Ship-Battle-Game/)
 
 
 ![homescreen](./Images/Screenshot-Game.png)
