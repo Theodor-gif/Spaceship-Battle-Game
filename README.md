@@ -28,14 +28,6 @@
 > HTML5 | CSS3 / SCSS | JavaScript (OOP)
 
 ### Live Demo
-> [Play the game here](### How to Play
-> Use the arrow keys to move your ship.
-> Press Space to shoot.
-
-### Technologies Used
-> HTML5 | CSS3 / SCSS | JavaScript (OOP)
-
-### Live Demo
 > [Play the game here](https://theodor-gif.github.io/Space-Ship-Battle-Game/)
 
 
