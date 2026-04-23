@@ -4,19 +4,19 @@
 ### This is my first project in Ironhack's bootcamp.
 > The project was to create a game using HTML, CSS and JavaScript.
 
-> Learn how to use everything they have teach us till now.
+> Practicing how to use everything they have tought us so far.
 
-> And more important to combine all those together with our creativite.
+> Combining all those together with our creativity.
 
 ***
 
 ### My Project
-> My project is a Early 90's 2d Space Ship Battle game.
+> My project is an Early 90's 2D Space Ship Battle game.
 
 > The Player Character is a Space Ship.
 
 > The Goals of the game :
- + Avoid the enemys to don't loose your lifes.
+ + Avoid the enemy not to lose your lifes.
  + Shoot to kill the enemy and collect as many possible points.
 ***
 
@@ -27,8 +27,14 @@
 ### Technologies Used
 > HTML5 | CSS3 / SCSS | JavaScript (OOP)
 
+### Acknowledgements
+> AI assistance provided by [Claude](https://claude.ai) (Anthropic) for:
++ Implementing collision detection
+
 ### Live Demo
 > [Play the game here](https://theodor-gif.github.io/Space-Ship-Battle-Game/)
+
+***
 
 
 ![homescreen](./Images/Screenshot-Game.png)
