@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Ship Battle</title>
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Set up => 1.Live Sass Cmpiler 2.Live Server 
+     SCSS Syntax
+     Indented Syntax -->
+    <header id="header">
+        <h2 class="header">Time: <span id="minutes"></span>:<span id="seconds"></span></h2>
+        <h2 class="header">Score: <span id="score"></span></h2>
+        <h2 class="header">Lifes: <span id="lifes"></span></h2>
+    </header>
+    <main id="main-screen">
+        <h1 id="game-title">Space Ship Battle</h1>
+        <section id="start-game">
+            <h2>Are you ready??</h2>
+            <label for="user-name">Enter your name:</label>
+            <input type="text" id="user-name" name="user-name">
+            <button id="start-button">Start</button>
+        </section>
+        <section id="end-game">
+                <h2>Game Over</h2>
+                <p id="final-score"></p>
+                <button id="restart-button">Restart</button>
+        </section>
+    </main>
+    <footer>
+        <h2>The Buttons</h2>
+        <div>
+            <img src="./Images/space-button.png" alt="space-button" class="button">
+            <img src="./Images/move-buttons.png" alt="arrow-button" class="button">
+        </div>
+    </footer>
+    <script src="./Javascript/control.js"></script>
+    <script src="./Javascript/bullet.js"></script>
+    <script src="./Javascript/player.js"></script>
+    <script src="./Javascript/enemy.js"></script>
+    <script src="./Javascript/game.js"></script>
+</body>
+</html>

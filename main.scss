@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+);
+
+$screen-height: (
+    "full-height": 100vh,
+    "game-height": 75vh
+);
+
+$screen-width: (
+    "full-width": 100vw,
+    "game-width": 85vw,
+    "button-width": 25vw
+);
+
+$font: "Bitcount Grid Double", system-ui;
+
+$colors: (
+    "background-color": linear-gradient(rgb(9,109,140), rgb(131,204,233)),
+    "text-color": #ffffff,
+    "border": rgb(62, 148, 153)
+);
+
+@mixin flexEvenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+};
+
+// Mobile screen
+
+body {
+    background-image: map-get($colors, "background-color");
+    color: map-get($colors, "text-color");
+    height: map-get($screen-height, "full-height");
+    font-family: $font;
+    overflow: hidden;
+}
+header {
+    @include flexEvenly;
+    width: 100%;
+    .header {
+        margin: 20px 0;
+        font-size: 1.2rem;  
+        text-shadow: 2px 2px 4px #000000;
+        color: map-get($colors, "text-color");
+    }
+}
+main {
+    position: relative;
+    border: 3px solid map-get($colors, "border");
+    border-radius: 5%;
+    height: map-get($screen-height, "game-height");
+    width: map-get($screen-width, "game-width");
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    h1 {
+        text-align: center;
+        font-size: 1.9rem;
+        position: absolute;
+        top: 10%;
+        margin: 0 auto;
+        width: 100%;
+        text-shadow: 2px 2px 4px #000000;
+    }
+    #start-game {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        top: 30%;
+        width: 80%;
+        border: 2px double map-get($colors, "border");
+        border-radius: 5%;
+        background-color: #000000a0;
+        padding: 5%;
+        h2 {
+            font-size: 1.8rem;
+            text-shadow: 2px 2px 4px #467c93;
+            width: 100%;
+            text-align: center;
+        }
+        label {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        input {
+            padding: 2%;
+            border-radius: 5px;
+            border: none;
+            width: 50%;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: map-get($colors, "border");
+            color: map-get($colors, "text-color");
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+    }
+    #end-game {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        top: 30%;
+        width: 80%;
+        border: 2px double map-get($colors, "border");
+        border-radius: 5%;
+        background-color: #000000a0;
+        padding: 5%;
+        h2 {
+            font-size: 1.8rem;
+            text-shadow: 2px 2px 4px #467c93;
+        }
+        p {
+            font-size: 1.2rem;
+            color: map-get($colors, "text-color");
+        }
+        button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: map-get($colors, "border");
+            color: map-get($colors, "text-color");
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+    }
+}
+footer {
+    margin-top: 20px;
+    h2 {
+        font-size: 2.3rem;
+        text-align: center;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    div {
+        @include flexEvenly;
+
+        .button {
+            width: map-get($screen-width, "button-width");
+        }
+    }
+}
+
+// Tablet screen
+
+@media (min-width: 426px) {
+    header {
+        @include flexEvenly;
+        .header {
+            font-size: 1.5rem;
+        }
+
+    }
+    main{
+        h1 {
+            font-size: 3rem;
+        }
+    }
+    footer {
+        border: 3px solid map-get($colors, "border");
+        width: 80%;
+        margin: 10px auto;
+        background-color: #284046a0;
+        padding-top: 2%;
+        h2 {
+            font-size: 2rem;
+        }
+        div {
+            .button {
+                width: 10vw;
+            }
+        }
+    }
+}
+
+// Desktop screen
+
+@media (min-width: 769px){
+    header {
+        @include flexEvenly;
+        .header {
+            font-size: 2.5rem;
+        }
+    }
+    #start-game {
+        h2 {
+            font-size: 2rem;
+        }
+        label {
+            font-size: 1.5rem;
+        }
+        input {
+            width: 100%;
+        }
+        button {
+            font-size: 1.5rem;
+        }
+    }
+    footer {
+        height: 10vh;
+        padding-top: 0.5%;
+        h2 {
+            font-size: 2rem;
+        }
+        div {
+            height: 50%;
+            .button {
+                width: 7.5vw;
+            }
+        }
+    }
+}

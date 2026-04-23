@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(rgb(9, 109, 140), rgb(131, 204, 233));
+  color: #ffffff;
+  height: 100vh;
+  font-family: "Bitcount Grid Double", system-ui;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+header .header {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 4px #000000;
+  color: #ffffff;
+}
+
+main {
+  position: relative;
+  border: 3px solid rgb(62, 148, 153);
+  border-radius: 5%;
+  height: 75vh;
+  width: 85vw;
+  margin: 0 auto;
+  background-image: linear-gradient(rgb(6, 46, 58), rgb(179, 229, 249));
+  display: flex;
+  justify-content: center;
+}
+main h1 {
+  text-align: center;
+  font-size: 1.9rem;
+  position: absolute;
+  top: 10%;
+  margin: 0 auto;
+  width: 100%;
+  text-shadow: 2px 2px 4px #000000;
+}
+main #start-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 30%;
+  width: 80%;
+  border: 2px double rgb(62, 148, 153);
+  border-radius: 5%;
+  background-color: rgba(0, 0, 0, 0.6274509804);
+  padding: 5%;
+}
+main #start-game h2 {
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 4px #467c93;
+  width: 100%;
+  text-align: center;
+}
+main #start-game label {
+  font-size: 1.2rem;
+  text-align: center;
+}
+main #start-game input {
+  padding: 2%;
+  border-radius: 5px;
+  border: none;
+  width: 50%;
+  text-align: center;
+}
+main #start-game button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(62, 148, 153);
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+main #end-game {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 30%;
+  width: 80%;
+  border: 2px double rgb(62, 148, 153);
+  border-radius: 5%;
+  background-color: rgba(0, 0, 0, 0.6274509804);
+  padding: 5%;
+}
+main #end-game h2 {
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 4px #467c93;
+}
+main #end-game p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+main #end-game button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(62, 148, 153);
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 20px;
+}
+footer h2 {
+  font-size: 2.3rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+}
+footer div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer div .button {
+  width: 25vw;
+}
+
+@media (min-width: 426px) {
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  header .header {
+    font-size: 1.5rem;
+  }
+  main h1 {
+    font-size: 3rem;
+  }
+  footer {
+    border: 3px solid rgb(62, 148, 153);
+    width: 80%;
+    margin: 10px auto;
+    background-color: rgba(40, 64, 70, 0.6274509804);
+    padding-top: 2%;
+  }
+  footer h2 {
+    font-size: 2rem;
+  }
+  footer div .button {
+    width: 10vw;
+  }
+}
+@media (min-width: 769px) {
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  header .header {
+    font-size: 2.5rem;
+  }
+  #start-game h2 {
+    font-size: 2rem;
+  }
+  #start-game label {
+    font-size: 1.5rem;
+  }
+  #start-game input {
+    width: 100%;
+  }
+  #start-game button {
+    font-size: 1.5rem;
+  }
+  footer {
+    height: 10vh;
+    padding-top: 0.5%;
+  }
+  footer h2 {
+    font-size: 2rem;
+  }
+  footer div {
+    height: 50%;
+  }
+  footer div .button {
+    width: 7.5vw;
+  }
+}/*# sourceMappingURL=main.min.css.map */
