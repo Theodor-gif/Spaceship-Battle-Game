@@ -36,6 +36,8 @@ class Game{
         this.playerMinutes = 0;
         this.playerSeconds = 0;
         this.playerName;
+        this.file = "./Sounds/Music-sound.mp3";
+        this.sound = new Audio(this.file);
 
         //-- Replace the content with the variables --//
 
@@ -48,6 +50,9 @@ class Game{
     };
     startGame(){
 
+        this.sound.play();
+        this.sound.volume = 0.5;
+        
         //-- addEventListener for press the start button --//
 
         this.startButton.addEventListener("click", () => {
