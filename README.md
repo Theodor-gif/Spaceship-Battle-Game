@@ -32,7 +32,7 @@
 + Implementing collision detection
 
 ### Live Demo
-> [Play the game here](https://theodor-gif.github.io/Space-Ship-Battle-Game/)
+> [Play the game here](https://theodor-gif.github.io/Spaceship-Battle-Game/)
 
 ***
 
